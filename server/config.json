@@ -1,0 +1,54 @@
+{
+  "restApiRoot": "/api",
+  "host": "0.0.0.0",
+  "port": 3000,
+  "remoting": {
+    "context": {
+      "enableHttpContext": false
+    },
+    "rest": {
+      "normalizeHttpPath": false,
+      "xml": false
+    },
+    "json": {
+      "strict": false,
+      "limit": "100kb"
+    },
+    "urlencoded": {
+      "extended": true,
+      "limit": "100kb"
+    },
+    "cors": false,
+    "errorHandler": {
+      "disableStackTrace": false
+    }
+  },
+  "legacyExplorer": false,
+  "logger": {
+    "level": "debug"
+  },
+  "push": [
+    {
+      "id": "com.ibm.strongloop.app",
+      "userId": "sample",
+      "name": "IBM StrongLoop Recipe",
+      "description": "IBM StrongLoop Recipe",
+      "pushSettings": {
+        "apns": {
+          "production": false,
+          "certData": "dev/ck-nopass.pem",
+          "keyData": "key/push-key-nopass.pem",
+          "pushOptions": {
+          },
+          "feedbackOptions": {
+            "batchFeedback": true,
+            "interval": 43200
+          },
+          "autoAdjustCache": true,
+          "maxConnections": 10,
+          "fastMode": true
+        }
+      }
+    }
+  ]
+}

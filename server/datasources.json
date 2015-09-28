@@ -1,0 +1,19 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb": {
+    "name": "mongodb",
+    "connector": "loopback-connector-mongodb",
+    "allowExtendedOperators": true
+  },
+  "push": {
+    "name": "push",
+    "defaultForType": "push",
+    "connector": "loopback-component-push",
+    "installation": "Installation",
+    "notification": "Notification",
+    "application": "Application"
+  }
+}

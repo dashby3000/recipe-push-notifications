@@ -1,0 +1,16 @@
+{
+  "name": "PushRegistration",
+  "base": "Installation",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "mongodb": {
+      "collection": "Installation"
+    }
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
